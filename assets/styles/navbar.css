@@ -1,0 +1,77 @@
+.navbar_container{
+ height: 100vh;
+ width: 200px;
+ border-right: 2px solid #292b30;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ color: #85868A;
+ left: 0;
+ top: 0;
+ bottom: 0;
+}
+
+.navbar_menu, .navbar_text, .navbar_AA{
+ display: flex;
+ align-items: left;
+ width: 100%;
+ margin-left: 60px;
+}
+
+
+.navbar_text{
+ margin-top: 70px;
+ flex-direction: column;
+}
+
+.navbar_text h2{
+ color: white;
+ margin-bottom: 10px;
+}
+
+.navbar_text p {
+ font-size: 0.8rem;
+}
+
+
+.navbar_menu ul{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ font-size: 0.9rem;
+}
+
+.navbar_menu ul li:hover{
+ color: white;
+ cursor: pointer;
+}
+
+.navbar_AA{
+ margin-bottom: 50px;
+}
+
+.navbar_AA button{
+ background: transparent;
+ color: white;
+ width: 50px;
+ border: 2px solid red;
+ border-radius: 50%;
+ padding: 10px 0px 10px 0px;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.navbar_AA button:hover{
+ animation: girar-cores 5s infinite linear;
+ cursor: pointer;
+}
+
+@keyframes girar-cores {
+ 0% {
+   filter: hue-rotate(0deg);
+ }
+ 100% {
+   filter: hue-rotate(360deg);
+ }
+}
